@@ -27,7 +27,7 @@ def chat_bot():
 
     print(f"""Welcome to {bot_name}!
           I can chat about:
-          'puns' - Learn some funny puns
+          'pun' - Learn some funny puns
           'joke' - Hear a funny joke
           'fact' - Learn something new
           'color' My favorite color
@@ -40,9 +40,9 @@ def chat_bot():
     while chatting:
         user_input = input("You: ").strip()
 
-        if user_input in ["hi","hello","hey","how"]:
+        if user_input in ["hi","hello","hey","how"]:            
             print(f"{bot_name}: {random.choice(grettings)}")
-        elif "puns" in user_input:
+        elif "pun" in user_input:
             print(f"{bot_name}: {random.choice(puns)}")
         elif "joke" in user_input:
             print(f"{bot_name}: {random.choice(jokes)}")
@@ -64,5 +64,3 @@ def chat_bot():
     print("Thanks for chatting! Run the program again to talk to me later.")
 
 chat_bot()
-                    
-        
